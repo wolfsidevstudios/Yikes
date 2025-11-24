@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import Hero from './components/Hero';
 import VideoSlider from './components/VideoSlider';
 import Socials from './components/Socials';
-import AIExperiment from './components/AIExperiment';
 import Shop from './components/Shop';
+import DiscordSection from './components/DiscordSection';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
         <Shop />
 
-        <AIExperiment />
+        <DiscordSection />
       </main>
 
       <footer className="w-full border-t border-gray-100 bg-gray-50 py-12 text-center">

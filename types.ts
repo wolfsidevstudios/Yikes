@@ -22,13 +22,6 @@ export interface CreatorStats {
   bio: string;
 }
 
-export interface AIExperimentState {
-  prompt: string;
-  result: string | null;
-  isLoading: boolean;
-  error: string | null;
-}
-
 export interface Product {
   id: string;
   name: string;
@@ -37,4 +30,11 @@ export interface Product {
   image: string;
   tag?: string;
   isFeatured?: boolean;
+}
+
+export interface AIExperimentState {
+  prompt: string;
+  result: string | null;
+  isLoading: boolean;
+  error: string | null;
 }

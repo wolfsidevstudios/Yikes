@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Initialize the client. API Key is expected to be in environment variables.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateViralIdea = async (userPrompt: string): Promise<string> => {
   try {
@@ -21,7 +21,6 @@ export const generateViralIdea = async (userPrompt: string): Promise<string> => 
       config: {
         systemInstruction: systemInstruction,
         temperature: 0.9, // High creativity
-        maxOutputTokens: 200,
       }
     });
 
