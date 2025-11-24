@@ -1,5 +1,6 @@
 
 import React, { useMemo } from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import VideoSlider from './components/VideoSlider';
 import Socials from './components/Socials';
@@ -8,6 +9,7 @@ import DiscordSection from './components/DiscordSection';
 import ImpactStats from './components/ImpactStats';
 import ShortsWall from './components/ShortsWall';
 import Timeline from './components/Timeline';
+import MopDictionary from './components/MopDictionary';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -17,13 +19,17 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white selection:bg-black selection:text-white overflow-x-hidden">
+      <Navbar />
       
       <main>
-        <Hero />
+        <div id="home">
+          <Hero />
+        </div>
+        
         <Socials />
         <ImpactStats />
 
-        <div className="py-24 space-y-12">
+        <div id="videos" className="py-24 space-y-12 scroll-mt-24">
            <div className="container mx-auto px-6 mb-12 text-center">
               <h2 className="text-4xl font-black tracking-tight mb-4">The Experiments</h2>
               <p className="text-gray-500 max-w-xl mx-auto">
@@ -35,13 +41,25 @@ const App: React.FC = () => {
            <VideoSlider videos={rowTwo} reverse={true} />
         </div>
 
-        <ShortsWall />
+        <div id="shorts" className="scroll-mt-24">
+          <ShortsWall />
+        </div>
         
-        <Timeline />
+        <div id="timeline" className="scroll-mt-24">
+          <Timeline />
+        </div>
         
-        <Shop />
+        <div id="dictionary" className="scroll-mt-24">
+          <MopDictionary />
+        </div>
+        
+        <div id="shop" className="scroll-mt-24">
+          <Shop />
+        </div>
 
-        <DiscordSection />
+        <div id="discord" className="scroll-mt-24">
+          <DiscordSection />
+        </div>
       </main>
 
       <footer className="w-full border-t border-gray-100 bg-gray-50 py-12 text-center">

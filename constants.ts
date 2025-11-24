@@ -1,5 +1,5 @@
 
-import { CreatorStats, SocialProfile, Video, Product, ShortVideo, StatItem, SpeedrunChallenge, TimelineEvent } from './types';
+import { CreatorStats, SocialProfile, Video, Product, ShortVideo, StatItem, SpeedrunChallenge, TimelineEvent, DictionaryTerm, FanReaction } from './types';
 
 export const CREATOR_INFO: CreatorStats = {
   realName: "Xander Keller",
@@ -146,5 +146,87 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     title: "1.57 Million",
     description: "Dominating the niche with 250M+ total views and counting.",
     icon: "Star"
+  }
+];
+
+export const MOP_DICTIONARY: DictionaryTerm[] = [
+  {
+    term: "MOP",
+    phonetic: "/mɒp/",
+    partOfSpeech: "noun / lifestyle",
+    definition: "The universal answer to everything. Can mean cool, weird, or literally just a cleaning tool.",
+    example: "\"That video was so mop.\""
+  },
+  {
+    term: "BUSTER",
+    phonetic: "/ˈbʌstər/",
+    partOfSpeech: "proper noun",
+    definition: "A golden retriever who is legally the CEO of the channel. Better than Xander in every way.",
+    example: "\"We need more Buster content.\""
+  },
+  {
+    term: "BRAINROT",
+    phonetic: "/ˈbreɪnˌrɒt/",
+    partOfSpeech: "noun",
+    definition: "Content so chaotic it lowers your IQ. Xander consumes this so you don't have to.",
+    example: "\"I watched Skibidi Toilet for 10 hours.\""
+  },
+  {
+    term: "NPC",
+    phonetic: "/ɛn pi si/",
+    partOfSpeech: "noun",
+    definition: "Non-Playable Character. Often found in Xander's social experiments reacting awkwardly.",
+    example: "\"He stood there like an NPC.\""
+  }
+];
+
+export const FAN_REACTIONS: FanReaction[] = [
+  {
+    id: "r1",
+    user: "Sarah Jenkins",
+    source: "Twitter",
+    avatarColor: "bg-blue-500",
+    text: "I literally spent 3 hours trying to find Talkomatic because of your video. Why are you like this?",
+    likes: "1.2K"
+  },
+  {
+    id: "r2",
+    user: "MikeT",
+    source: "YouTube",
+    avatarColor: "bg-red-500",
+    text: "The fact that you created an entire fake influencer persona just to prove a point about algorithms is terrifyingly genius.",
+    likes: "4.5K"
+  },
+  {
+    id: "r3",
+    user: "GlitchHunter",
+    source: "Reddit",
+    avatarColor: "bg-orange-500",
+    text: "Does anyone else think Yikes is actually an AI? He posts way too consistently for a human.",
+    likes: "892"
+  },
+  {
+    id: "r4",
+    user: "Jessica Wong",
+    source: "Instagram",
+    avatarColor: "bg-purple-500",
+    text: "My boyfriend watches your videos and now he won't stop saying 'mop' to everything. Please help.",
+    likes: "2.1K"
+  },
+  {
+    id: "r5",
+    user: "David Miller",
+    source: "Twitter",
+    avatarColor: "bg-green-500",
+    text: "I thought the Amazon product was real and I tried to buy it. I feel betrayed but entertained.",
+    likes: "3.4K"
+  },
+  {
+    id: "r6",
+    user: "AnonUser",
+    source: "Discord",
+    avatarColor: "bg-gray-500",
+    text: "Xander is the only YouTuber who can make a video about literally nothing and make it viral.",
+    likes: "1.5K"
   }
 ];

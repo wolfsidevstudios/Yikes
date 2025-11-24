@@ -68,3 +68,20 @@ export interface TimelineEvent {
   description: string;
   icon?: string;
 }
+
+export interface DictionaryTerm {
+  term: string;
+  phonetic: string;
+  partOfSpeech: string;
+  definition: string;
+  example: string;
+}
+
+export interface FanReaction {
+  id: string;
+  user: string;
+  source: string;
+  avatarColor: string;
+  text: string;
+  likes: string;
+}
