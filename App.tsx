@@ -7,6 +7,7 @@ import Shop from './components/Shop';
 import DiscordSection from './components/DiscordSection';
 import ImpactStats from './components/ImpactStats';
 import ShortsWall from './components/ShortsWall';
+import Timeline from './components/Timeline';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -35,6 +36,8 @@ const App: React.FC = () => {
         </div>
 
         <ShortsWall />
+        
+        <Timeline />
         
         <Shop />
 

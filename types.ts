@@ -61,3 +61,10 @@ export interface SpeedrunChallenge {
   result: string;
   color: string;
 }
+
+export interface TimelineEvent {
+  year: string;
+  title: string;
+  description: string;
+  icon?: string;
+}

@@ -1,5 +1,5 @@
 
-import { CreatorStats, SocialProfile, Video, Product, ShortVideo, StatItem, SpeedrunChallenge } from './types';
+import { CreatorStats, SocialProfile, Video, Product, ShortVideo, StatItem, SpeedrunChallenge, TimelineEvent } from './types';
 
 export const CREATOR_INFO: CreatorStats = {
   realName: "Xander Keller",
@@ -113,5 +113,38 @@ export const SPEEDRUN_CHALLENGES: SpeedrunChallenge[] = [
     timeframe: "24 Hours",
     result: "Site Offline",
     color: "bg-purple-600"
+  }
+];
+
+export const TIMELINE_EVENTS: TimelineEvent[] = [
+  {
+    year: "2020",
+    title: "The Beginning",
+    description: "Started creating experimental content and tricking the internet.",
+    icon: "Rocket"
+  },
+  {
+    year: "2021",
+    title: "First Viral Hit",
+    description: "Videos started gaining millions of views through algorithm manipulation tests.",
+    icon: "Zap"
+  },
+  {
+    year: "2023",
+    title: "Talkomatic Crash",
+    description: "Accidentally took down the oldest chat site on the internet with a traffic spike.",
+    icon: "AlertTriangle"
+  },
+  {
+    year: "2024",
+    title: "0 to 100K",
+    description: "Successfully built a channel from scratch in under 30 days using Shorts.",
+    icon: "Trophy"
+  },
+  {
+    year: "2025",
+    title: "1.57 Million",
+    description: "Dominating the niche with 250M+ total views and counting.",
+    icon: "Star"
   }
 ];
