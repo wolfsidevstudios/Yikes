@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Videos', href: '#videos' },
     { name: 'Shorts', href: '#shorts' },
-    { name: 'Journey', href: '#timeline' },
+    { name: 'Community', href: '#community' },
     { name: 'Dictionary', href: '#dictionary' },
     { name: 'Shop', href: '#shop' },
   ];

@@ -18,9 +18,13 @@ const MopDictionary: React.FC = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
             {MOP_DICTIONARY.map((item, index) => (
-                <div key={index} className="group p-8 border border-gray-100 rounded-[2rem] hover:border-black/10 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 bg-white">
+                <div 
+                    key={index} 
+                    className="sticky top-28 md:static group p-8 border border-gray-100 rounded-[2rem] hover:border-black/10 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 bg-white shadow-lg md:shadow-none"
+                    style={{ zIndex: index }}
+                >
                     <div className="mb-4">
                         <h3 className="text-4xl font-black text-black mb-1 group-hover:text-blue-600 transition-colors">
                             {item.term}

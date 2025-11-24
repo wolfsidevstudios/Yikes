@@ -10,6 +10,7 @@ import ImpactStats from './components/ImpactStats';
 import ShortsWall from './components/ShortsWall';
 import Timeline from './components/Timeline';
 import MopDictionary from './components/MopDictionary';
+import Community from './components/Community';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -47,6 +48,10 @@ const App: React.FC = () => {
         
         <div id="timeline" className="scroll-mt-24">
           <Timeline />
+        </div>
+
+        <div id="community" className="scroll-mt-24">
+          <Community />
         </div>
         
         <div id="dictionary" className="scroll-mt-24">

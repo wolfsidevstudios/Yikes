@@ -85,3 +85,13 @@ export interface FanReaction {
   text: string;
   likes: string;
 }
+
+export interface CommunityPost {
+  id: string;
+  created_at: string;
+  username: string;
+  content: string | null;
+  image_url: string | null;
+  likes: number;
+  avatar_color?: string;
+}
