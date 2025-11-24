@@ -4,6 +4,8 @@ import VideoSlider from './components/VideoSlider';
 import Socials from './components/Socials';
 import Shop from './components/Shop';
 import DiscordSection from './components/DiscordSection';
+import ImpactStats from './components/ImpactStats';
+import SpeedrunArchives from './components/SpeedrunArchives';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -17,6 +19,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <Socials />
+        <ImpactStats />
 
         <div className="py-24 space-y-12">
            <div className="container mx-auto px-6 mb-12 text-center">
@@ -30,6 +33,8 @@ const App: React.FC = () => {
            <VideoSlider videos={rowTwo} reverse={true} />
         </div>
 
+        <SpeedrunArchives />
+        
         <Shop />
 
         <DiscordSection />

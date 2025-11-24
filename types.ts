@@ -32,6 +32,23 @@ export interface Product {
   isFeatured?: boolean;
 }
 
+export interface Speedrun {
+  id: string;
+  title: string;
+  goal: string;
+  timeframe: string;
+  result: string;
+  status: 'Success' | 'Failed';
+  color: string;
+}
+
+export interface StatItem {
+  id: string;
+  label: string;
+  value: string;
+  description: string;
+}
+
 export interface AIExperimentState {
   prompt: string;
   result: string | null;

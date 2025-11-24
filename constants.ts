@@ -1,4 +1,4 @@
-import { CreatorStats, SocialProfile, Video, Product } from './types';
+import { CreatorStats, SocialProfile, Video, Product, Speedrun, StatItem } from './types';
 
 export const CREATOR_INFO: CreatorStats = {
   realName: "Xander Keller",
@@ -57,5 +57,42 @@ export const SHOP_ITEMS: Product[] = [
     url: "https://mopped.store/en-mxn/products/mopped-heavyweight-boxy-tee",
     image: "https://i.ibb.co/tTDjgvhM/IMG-4176.jpg",
     tag: "New Arrival"
+  }
+];
+
+export const IMPACT_STATS: StatItem[] = [
+  { id: '1', label: 'Total Views', value: '250M+', description: 'Across all channels' },
+  { id: '2', label: 'Sites Crashed', value: '1', description: 'RIP Talkomatic' },
+  { id: '3', label: 'Subscribers', value: '1.57M', description: 'Growing daily' },
+  { id: '4', label: 'Fake Personas', value: '12+', description: 'Undetected by fans' },
+];
+
+export const SPEEDRUN_CHALLENGES: Speedrun[] = [
+  {
+    id: 's1',
+    title: 'The Original Speedrun',
+    goal: '100,000 Subscribers',
+    timeframe: '30 Days',
+    result: 'COMPLETED IN 28 DAYS',
+    status: 'Success',
+    color: 'bg-blue-500'
+  },
+  {
+    id: 's2',
+    title: 'The Shorts Speedrun',
+    goal: '100,000 Subscribers',
+    timeframe: '10 Days',
+    result: 'COMPLETED IN 6 DAYS',
+    status: 'Success',
+    color: 'bg-green-500'
+  },
+  {
+    id: 's3',
+    title: 'The Zero Viewer Stream',
+    goal: '100 Concurrent Viewers',
+    timeframe: 'One Sitting',
+    result: 'COMPLETED IN 4 HOURS',
+    status: 'Success',
+    color: 'bg-purple-500'
   }
 ];
