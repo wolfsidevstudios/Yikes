@@ -1,4 +1,5 @@
-import { CreatorStats, SocialProfile, Video, Product, Speedrun, StatItem } from './types';
+
+import { CreatorStats, SocialProfile, Video, Product, ShortVideo, StatItem, SpeedrunChallenge } from './types';
 
 export const CREATOR_INFO: CreatorStats = {
   realName: "Xander Keller",
@@ -67,32 +68,50 @@ export const IMPACT_STATS: StatItem[] = [
   { id: '4', label: 'Fake Personas', value: '12+', description: 'Undetected by fans' },
 ];
 
-export const SPEEDRUN_CHALLENGES: Speedrun[] = [
+export const VIRAL_SHORTS: ShortVideo[] = [
+  { id: "jV5ai2F5SCE", title: "i copied airrack's instagram", link: "https://www.youtube.com/shorts/jV5ai2F5SCE" },
+  { id: "aorZej13SLE", title: "AI youtubers order a pizza", link: "https://www.youtube.com/shorts/aorZej13SLE" },
+  { id: "sU9SptXFdvg", title: "i copied ryan's instagram", link: "https://www.youtube.com/shorts/sU9SptXFdvg" },
+  { id: "9MYwAwTtWeI", title: "my dad needs vbucks", link: "https://www.youtube.com/shorts/9MYwAwTtWeI" },
+  { id: "2a9gKDmtT0k", title: "how i avoid copyright", link: "https://www.youtube.com/shorts/2a9gKDmtT0k" },
+  { id: "Gi2oubu0TU0", title: "what does mop mean?", link: "https://www.youtube.com/shorts/Gi2oubu0TU0" },
+  { id: "0knQL-8mS5s", title: "making my grandpa proud", link: "https://www.youtube.com/shorts/0knQL-8mS5s" },
+  { id: "LuIh97oVRAs", title: "going viral on a furry app", link: "https://www.youtube.com/shorts/LuIh97oVRAs" },
+  { id: "vG_8AvaothM", title: "i made a viral AI kanye song", link: "https://www.youtube.com/shorts/vG_8AvaothM" },
+  { id: "MsyWB8mLi-0", title: "meet april isabella", link: "https://www.youtube.com/shorts/MsyWB8mLi-0" },
+  { id: "OyCRbxCArgI", title: "i started a viral copypasta", link: "https://www.youtube.com/shorts/OyCRbxCArgI" },
+  { id: "DE7r0gz8FW0", title: "100,000 subscribers in 30 days", link: "https://www.youtube.com/shorts/DE7r0gz8FW0" },
+  { id: "vElkxjvi4S8", title: "self promoting in public (Day 28)", link: "https://www.youtube.com/shorts/vElkxjvi4S8" },
+  { id: "N8Qf4Rix2wU", title: "i became a vlogger for 24 hours (Day 27)", link: "https://www.youtube.com/shorts/N8Qf4Rix2wU" },
+  { id: "lxyfK-zVP54", title: "reacting to your videos with #savebrian (Day 26)", link: "https://www.youtube.com/shorts/lxyfK-zVP54" },
+  { id: "2VLXsHaOXmA", title: "i became a sigma for 24 hours (Day 25)", link: "https://www.youtube.com/shorts/2VLXsHaOXmA" },
+  { id: "seH6fEROvdw", title: "i made a podcast (Day 24)", link: "https://www.youtube.com/shorts/seH6fEROvdw" },
+  { id: "krwM-qQDVAQ", title: "i made my own youtube rewind (Day 23)", link: "https://www.youtube.com/shorts/krwM-qQDVAQ" }
+];
+
+export const SPEEDRUN_CHALLENGES: SpeedrunChallenge[] = [
   {
-    id: 's1',
-    title: 'The Original Speedrun',
-    goal: '100,000 Subscribers',
-    timeframe: '30 Days',
-    result: 'COMPLETED IN 28 DAYS',
-    status: 'Success',
-    color: 'bg-blue-500'
+    id: "speedrun-1",
+    title: "Project: 10 Days",
+    goal: "0 to 100k Subs",
+    timeframe: "10 Days",
+    result: "Success (Day 10)",
+    color: "bg-blue-600"
   },
   {
-    id: 's2',
-    title: 'The Shorts Speedrun',
-    goal: '100,000 Subscribers',
-    timeframe: '10 Days',
-    result: 'COMPLETED IN 6 DAYS',
-    status: 'Success',
-    color: 'bg-green-500'
+    id: "speedrun-2",
+    title: "Project: Shorts",
+    goal: "0 to 100k Subs",
+    timeframe: "30 Days",
+    result: "Success (Day 28)",
+    color: "bg-red-600"
   },
   {
-    id: 's3',
-    title: 'The Zero Viewer Stream',
-    goal: '100 Concurrent Viewers',
-    timeframe: 'One Sitting',
-    result: 'COMPLETED IN 4 HOURS',
-    status: 'Success',
-    color: 'bg-purple-500'
+    id: "speedrun-3",
+    title: "Project: Talkomatic",
+    goal: "Crash the App",
+    timeframe: "24 Hours",
+    result: "Site Offline",
+    color: "bg-purple-600"
   }
 ];

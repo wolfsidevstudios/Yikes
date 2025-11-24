@@ -1,3 +1,4 @@
+
 import React, { useMemo } from 'react';
 import Hero from './components/Hero';
 import VideoSlider from './components/VideoSlider';
@@ -5,7 +6,7 @@ import Socials from './components/Socials';
 import Shop from './components/Shop';
 import DiscordSection from './components/DiscordSection';
 import ImpactStats from './components/ImpactStats';
-import SpeedrunArchives from './components/SpeedrunArchives';
+import ShortsWall from './components/ShortsWall';
 import { TOP_VIDEOS } from './constants';
 
 const App: React.FC = () => {
@@ -33,7 +34,7 @@ const App: React.FC = () => {
            <VideoSlider videos={rowTwo} reverse={true} />
         </div>
 
-        <SpeedrunArchives />
+        <ShortsWall />
         
         <Shop />
 
@@ -48,6 +49,14 @@ const App: React.FC = () => {
           </p>
         </div>
       </footer>
+
+      <div className="w-full">
+         <img 
+            src="https://i.ibb.co/T90jV3J/IMG-4177.jpg" 
+            alt="Yikes Footer Graphic" 
+            className="w-full h-auto object-cover block"
+         />
+      </div>
     </div>
   );
 };

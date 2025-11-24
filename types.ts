@@ -1,3 +1,4 @@
+
 export interface Video {
   id: string;
   title: string;
@@ -32,14 +33,10 @@ export interface Product {
   isFeatured?: boolean;
 }
 
-export interface Speedrun {
+export interface ShortVideo {
   id: string;
   title: string;
-  goal: string;
-  timeframe: string;
-  result: string;
-  status: 'Success' | 'Failed';
-  color: string;
+  link: string;
 }
 
 export interface StatItem {
@@ -54,4 +51,13 @@ export interface AIExperimentState {
   result: string | null;
   isLoading: boolean;
   error: string | null;
+}
+
+export interface SpeedrunChallenge {
+  id: string;
+  title: string;
+  goal: string;
+  timeframe: string;
+  result: string;
+  color: string;
 }
